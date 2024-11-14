@@ -24,9 +24,13 @@ for (let i = 1; i<=9; i++) {
 // 문제 4: 배열에 저장된 과일들을 하나씩 출력하세요.
 var fruits = ['사과', '바나나', '포도'];
 
-for (let i = 0; i< fruits.length; i++) {
-    console.log(fruits[i]);
-}
+// for (let i = 0; i< fruits.length; i++) {
+//     console.log(fruits[i]);
+// }
+
+for (var fruits of fruits) {
+    console.log(fruits);
+  }
 
 // 문제 5: while문을 사용하여 5부터 1까지 역순으로 출력하세요.
 
