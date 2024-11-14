@@ -59,7 +59,10 @@ switch (day) {
 
 // 문제 5: 두 숫자를 비교하여 큰 수를 출력하세요.
 
-const a = 9;
-const b = 11;
-
-const number = a < b ? 'a' : 'b'
+const a = 22;
+const b = 23;
+if (a < b) {
+console.log( b )
+}else{
+    console.log( a )
+}
