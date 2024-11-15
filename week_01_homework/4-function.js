@@ -4,12 +4,12 @@
 // 코드의 재사용성과 가독성을 높여줍니다.
 // 기능
 
-// function greet (name) { //함수 선언
+function greet (name) { //함수 선언
 // name은 매개변수
 
-// console.log (`안녕하세요 ${name}님!!`)
-// }
-// greet() // 함수 실행, 호출
+console.log (`안녕하세요 ${name}님!!`)
+}
+greet("이름") // 함수 실행, 호출
 
 // 예시 1: 인사가 없는 함수
 function sayHello() {
