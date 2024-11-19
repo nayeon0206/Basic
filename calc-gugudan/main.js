@@ -118,7 +118,7 @@ function calculator() {
   //     result = num1 / num2;
   //     break;
   // }
-console.log(`${number1} ${}`)
+// console.log(`${number1} ${}`)
   // console.log(); // 한칸 띄우기
 }
 
