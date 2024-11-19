@@ -11,7 +11,8 @@
 // 1-3. 기본적인 콜백 함수
 function doSomething(task, callback) {
     console.log(`나는 ${task}를 하고 있어.`);
-    callback(); // 작업이 끝난 후 콜백 함수를 실행
+    callback(); // 함수를 받는다.
+    // 작업이 끝난 후 콜백 함수를 실행
 }
 
 function afterTask() {
@@ -41,6 +42,7 @@ doSomething("청소", afterTask);
 const number = [1, 2, 3, 4, 5];
 
 const multiplynumber = number.map(num => num * 2);
+//map 안에 들어가는건 함수
 
 console.log(multiplynumber) // [2, 4, 6, 8, 10]
 // map 함수로 number함수에 대한 배열을 찾은 다음 숫자 각각 하나씩 2를 곱해주고
@@ -60,18 +62,18 @@ console.log(a==b); // true
 console.log() // 한칸 띄우기
 // a와 b의 "값"이 똑같아서 true가 나왔음
 
-// 2-2 '===' : "유형" 을 비교하는 것 (data type)
+// 2-2 '===' : "유형" 까지! 비교하는 것 (data type) (엄격한 비교. 값도 비교하고 유형, 타입까지 비교한다.)
 
 const c = 0;
 const d = "0";
 
 console.log(c===d); // false
 console.log() // 한칸 띄우기
-// c와 d의 유형(data type)이 달라서 false가 나왔음
+// c와 d의 유형(data type)이 달라서 false가 나왔음 
 // c의 0은 숫자 0이고, d의 "0"은 문자열!!
 
 // ---------------------------------------------------------
-// 3. is NaN 함수란?
+// 3. isNaN 함수란?
 
 // 3-1. NaN : (Not a Number)의 약자, 숫자가 아님을 나타내는 숫자 데이터 타입.
 // 이 함수의 반환값은 불리언 타입으로 나온다. (boolean : 참, 거짓 판별 할 때 사용)
@@ -88,7 +90,7 @@ console.log(isNaN("123"));  // false (문자열이지만 숫자로 변환 가능
 console.log(isNaN("123abc")); // true (숫자로 변환 불가)
 console.log(isNaN(true));  // false (true는 숫자 1로 변환 가능)
 // boolean이 오직 두 가지의 값만 가지기 때문
-// true가 1이고 false가 0이다. 
+// true가 1이고 false가 0이다.
 console.log() // 한칸 띄우기
 
 // Number.isNaN() 과의 차이점!!
@@ -122,6 +124,7 @@ const arr = [1, 2, 3, 4, 5];
 console.log(arr.includes(3)); // true
 console.log(arr.includes(6)); // false
 console.log() // 한칸 띄우기
+
 // - 문자열의 대 소문자 구분에서도 사용
 // 배열에서 includes() 함수는 찾는 요소가 문자열일 경우 대소문자를 구분합니다.
 
@@ -130,12 +133,14 @@ const words = ["apple", "banana", "orange"];
 console.log(words.includes("apple")); // true
 console.log(words.includes("Apple")); // false
 console.log() // 한칸 띄우기
+
 // - 문자열의 일치를 확인 할 때도 사용한다.
 const words1 = ["apple", "banana", "orange"];
 
 console.log(words1.includes("banana")); // true
 console.log(words1.includes("ban")); // false
 console.log() // 한칸 띄우기
+
 // 변수도 포함하여 확인한다.
 
 const car = "My car";
@@ -144,6 +149,7 @@ const words2 = ["apple", "banana", car];
 console.log(words2.includes(car)); // true
 console.log(words2.includes("My car")); // true
 console.log() // 한칸 띄우기
+
 // NaN은 자기 자신과 동등하지 않기때문에 NaN === NaN은 항상 false임 
 // 배열에서는 NaN이 포함되어있는지 확인 할 수 있음
 
