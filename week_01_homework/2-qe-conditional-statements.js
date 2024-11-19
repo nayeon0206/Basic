@@ -57,31 +57,31 @@ switch (day) {
     console.log("주말입니다!");
 }
 
-switch (day) {
-  case 1:
-    console.log("월요일 입니다.");
-    break;
-  case 2:
-    console.log("화요일 입니다.");
-    break;
-  case 3:
-    console.log("수요일 입니다.");
-    break;
-  case 4:
-    console.log("목요일 입니다.");
-    break;
-  case 5:
-    console.log("금요일 입니다.");
-    break;
-  case 6:
-    console.log("토요일 입니다.");
-    break;
-  case 7:
-    console.log("일요일 입니다.");
-    break;
-  default:
-    console.log("1~7까지의 숫자만 입력해주세요!");
-}
+// switch (day) {
+//   case 1:
+//     console.log("월요일 입니다.");
+//     break;
+//   case 2:
+//     console.log("화요일 입니다.");
+//     break;
+//   case 3:
+//     console.log("수요일 입니다.");
+//     break;
+//   case 4:
+//     console.log("목요일 입니다.");
+//     break;
+//   case 5:
+//     console.log("금요일 입니다.");
+//     break;
+//   case 6:
+//     console.log("토요일 입니다.");
+//     break;
+//   case 7:
+//     console.log("일요일 입니다.");
+//     break;
+//   default:
+//     console.log("1~7까지의 숫자만 입력해주세요!");
+// }
 
 // 문제 5: 두 숫자를 비교하여 큰 수를 출력하세요.
 
