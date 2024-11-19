@@ -7,6 +7,7 @@ import { read } from 'fs';
 function main() {
   // 사용자로부터 입력을 받습니다. // 원하는 기능 선택
   while (true) {
+
     console.log(chalk.white('\n원하는 기능을 선택하세요.'));
     console.log(chalk.white('\n1.') + chalk.green(' 사칙연산 계산기'));
     console.log(chalk.white('2.') + chalk.green(' 구구단 출력기 (2-9단)'));
@@ -125,7 +126,7 @@ const number = parseFloat(readlineSync.question('>'));
 //   console.log(chalk.red(`2 에서 9 사이의 숫자를 입력해주세요!`));
 //   return;
 }
-console.log(chalk.yellowBright(`\n구구단 ${i}단 :`))
+// console.log(chalk.yellowBright(`\n구구단 ${i}단 :`))
 // for (let i = 1; i<=9; i++) {
 //     console.log(`${number} x ${i} = ${number * i}`);
 // }
