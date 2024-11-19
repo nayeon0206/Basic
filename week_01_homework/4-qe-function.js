@@ -6,8 +6,12 @@ function add(a,b) {
     return a+b;
 }
 
-const sum = add(20, 6);
-console.log(`두 수의 합계는? ${sum}`)
+function add(number1,number2) {
+    return number1+number2
+}
+
+console.log(add(23, 24))
+
 // 문제 2: 이름을 매개변수로 받아서 "안녕하세요, [이름]님!"을 출력하는 함수를 작성하세요.
 
 function meet(name){
@@ -23,6 +27,20 @@ function maxNum(a, b, c) {
 
 console.log(maxNum(1, 12, 20));
 
+function returnMaxValue(number1, number2, number3) {
+    let max = number1;
+
+    if (number2 > max) {
+        max = number2;
+    }
+    if (number3 > max) {
+        max = number3;
+    }
+
+    return max;
+}
+console.log(returnMaxValue(10,100,120));
+
 // 문제 4: 숫자를 매개변수로 받아 짝수인지 홀수인지 반환하는 함수를 작성하세요.
 
 function check(number) {
@@ -37,10 +55,9 @@ console.log(check(4));
 console.log(check(9));
 // 문제 5: 배열을 매개변수로 받아 모든 요소를 출력하는 함수를 작성하세요.
 
-function print(arr) {
-   for(let i = 0; i < arr.length; i++){
-
-    console.log(arr[i])};
+function print(array) {
+   for(let i = 0; i < array.length; i++){
+    console.log(array[i])};
 }
 
 print(["감자", "고구마", "옥수수"]);
