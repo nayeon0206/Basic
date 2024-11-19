@@ -2,9 +2,9 @@
 
 // 문제 1: 두 숫자를 더하는 함수를 작성하고 결과를 출력하세요.
 
-function add(a,b) {
-    return a+b;
-}
+// function add(a,b) {
+//     return a+b;
+// }
 
 function add(number1,number2) {
     return number1+number2

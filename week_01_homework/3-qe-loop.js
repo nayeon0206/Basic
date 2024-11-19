@@ -34,9 +34,24 @@ for (var fruits of fruits) {
 
 // 문제 5: while문을 사용하여 5부터 1까지 역순으로 출력하세요.
 
+//
+
 let i = 5;
 
 while (i >= 1) {
+    if(i === 2) {
+        console.log(i);
+        break;
+    }
     console.log(i);
     i--; // i를 1씩 감소시켜가며 출력
 }
+// 탈출 조건이 중요하다!
+// break
+
+// if(i == 2) {
+//     console.log(i);
+//     break;
+// }
+
+// == , ===의 차이 알아보기
