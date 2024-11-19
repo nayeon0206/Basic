@@ -33,6 +33,7 @@ console.log(food[0]);
 // 첫번째 음식 (배열 순서 : 0, 1, 2 이다. 따라서 첫 번째 음식을 출력할 때는 0을 써준다.)
 
 // 문제 5: 사람의 정보를 객체로 만들어 이름과 나이를 저장하고 출력하세요.
- const person1 = ['강나연', 28];
+ const person1 = {name: '강나연',
+    age: 28};
 
- console.log(person1);
+ console.log(person1.name, person1.age);
