@@ -1,3 +1,5 @@
+// find 사용
+
 const objArray = [
     { name: 'apple', price: 100 },
     { name: 'banana', price: 200 },
