@@ -7,6 +7,7 @@ function myIndexOf(arr, value) {
         return i;
     }
   }
+  return -1;
 }
 
 const index1 = arr.indexOf(3); // 2
