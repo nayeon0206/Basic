@@ -34,6 +34,10 @@ class GameCharacter {
 
     console.log(`${this.name}가 체력이 ${randomHeal} 만큼 회복이 되었습니다.`)
   }
+
+  levelUp() {
+    
+  }
 }
 const myCharacter = new GameCharacter("고양이", 1, 100, 5);
 console.log(myCharacter);
