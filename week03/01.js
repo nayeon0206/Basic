@@ -17,3 +17,6 @@ const openBox = new Promise((resolve, reject) => {
     .catch((error) => {
       console.log(error); // 실패 메시지
     });
+
+    //setTimeout이 끝나기 전이므로 Promise 객체의 상태가 <pending>으로 표시
+    // 이는 Promise가 아직 **완료(fulfilled)**되거나 **실패(rejected)**되지 않았음을 나타낸다.
