@@ -41,15 +41,15 @@ class GameCharacter {
     // heal 메서드에서 랜덤 체력을 가져옴
     const randomHeal = Math.floor(Math.random()*(20 - 10 + 1))+ 10;
     // randomattack이라는 변수 이름 설정하여 랜덤 공격력
-    const randomattack = Math.floor(Math.random()*(5 - 2 + 1)) + 2;
+    const randomAttack = Math.floor(Math.random()*(5 - 2 + 1)) + 2;
 
     this.hp += randomHeal;
-    this.attack += randomattack;
+    this.attack += randomAttack;
 
 
     console.log(`${this.name} 레벨 업! 현재 레벨 : ${this.level}`);
     console.log(`체력이 ${randomHeal} 만큼 회복되었습니다.`);
-    console.log(`공격력이 ${randomattack} 만큼 올랐습니다.`);
+    console.log(`공격력이 ${randomAttack} 만큼 올랐습니다.`);
     console.log(); // 한줄 띄우기
   }
 }
