@@ -44,7 +44,7 @@ class GameCharacter {
     const randomAttack = Math.floor(Math.random()*(5 - 2 + 1)) + 2;
 
     this.hp += randomHeal;
-    this.attack += randomAttack;
+    this.damage += randomAttack;
 
 
     console.log(`${this.name} 레벨 업! 현재 레벨 : ${this.level}`);
