@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement()) // Primary Key, 유저의 식별키 - 주민등록 번호 같은 느낌
+  name      String // 정영훈 한국 엄청 많다 -> 88~~~~ 인사람 나와 -> 제가 나간다.
+  gender    String
+  createdAt DateTime @default(now())
+  orders    Order[] // 관계 정의
+}
+
+
+model Order {
+  orderId   Int    @id @default(autoincrement())
+  orderName String
+  userId    Int
+  author    User   @relation(fields: [userId], references: [id])
+}
+
+// user 
+// id-1 정영훈
+
+// order
+// orderid-1 아바라주문 id-100
