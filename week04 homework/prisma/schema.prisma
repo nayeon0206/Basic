@@ -9,6 +9,14 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "mysql"
+  url      = env("nayeon:aaaa1234@express-database.cnkqmoqs2zk1.ap-northeast-2.rds.amazonaws.com:3306")
+}
+
+model Players {
+ id Int @id @defult(autoincrement())
+ name String
+ speed Int
+ shooting Int
+ grade String
 }
