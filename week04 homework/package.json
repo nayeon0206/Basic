@@ -9,11 +9,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "- [x] 1. 프로젝트 생성 \r - [X] 2. 프로젝트 초기화 - `npm init -y`\r - [X] 3. ESM - package.json 수정 -> type:module, scripts 수정\r - [X] 4. 필요한 패키지 설치 - `npm i express`, `npm i -D nodemon`\r - [x] 5. server.js 파일 생성 및 초기화 코드 작성 \r - [x] 6. 선수 데이터 생성 \r - [x] 7. 선수 데이터 불러오기 - CRUD - Read\r - [x] 8. 선수 데이터 생성하기 - CRUD - Create\r - [x] 9. 특정 선수 데이터 삭제    - CRUD - Delete\r - [x] 10. 특정 선수 데이터 update    - CRUD - Update\r - [x] 11. 폴더분리. mvc \r - [x] 12. 선수 삭제시 데이터에서 삭제 되지 않는 에러 발생",
   "dependencies": {
     "express": "^4.21.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.9",
+    "prisma": "^6.0.1"
   }
 }
