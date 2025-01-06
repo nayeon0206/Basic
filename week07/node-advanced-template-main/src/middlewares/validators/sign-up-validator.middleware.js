@@ -9,7 +9,7 @@ import { MIN_PASSWORD_LENGTH } from '../../constants/auth.constant.js';
 // 이 값은 비밀번호 검증 규칙에서 사용
 
 const schema = Joi.object({
-   // Joi 객체를 사용하여 요청(req.body)에 대한 검증 스키마를 정의합니다.
+   // Joi 객체를 사용하여 요청(req.body)에 대한 검증 스키마를 정의
   email: Joi.string().email().required().messages({
     'any.required': MESSAGES.AUTH.COMMON.EMAIL.REQUIRED,
      // 이메일 필드가 요청 데이터에 포함되지 않은 경우의 오류 메시지.
