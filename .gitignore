@@ -4,3 +4,4 @@ package-lock.json
 yarn.lock
 schema.prisma
 .env
+week08/.env
