@@ -14,6 +14,10 @@ class PostsService {
   getPosts = async () => {
     return await this.#repository.getAllPosts();
   };
+
+  getPost = async (postId) => {
+    return await this.#repository.getPostById(postId);
+  };
 }
 
 export default new PostsService(postsRepository);

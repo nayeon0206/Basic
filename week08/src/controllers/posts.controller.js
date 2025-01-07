@@ -17,6 +17,12 @@ class PostsController {
     const posts = await this.#service.getPosts();
     return res.status(200).json({ data: posts });
   };
+
+  getPost = async (req, res) => {
+    const { postId } = req.params;
+    const posts = await this.#service.getPost(+postId);
+    return res.status(200).json({ data: posts });
+  };
 }
 
 export default new PostsController(postsService);
