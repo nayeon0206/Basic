@@ -19,10 +19,8 @@ class PostRepository {
   };
 
   getPostById = async (postId) => {
-    return await this.#orm.posts.findUnique();
-    {where: postId}
+    return await this.#orm.posts.findUnique({ where: { postId } });
   };
-
 }
 
 export default new PostRepository(prisma);
