@@ -3,3 +3,4 @@ package-lock.json
 .prettierrc
 yarn.lock
 schema.prisma
+.env
