@@ -1,1 +1,1 @@
-export const MIN_RESUME_LENGTH = 150;
+export const MIN_RESUME_LENGTH = 10;
