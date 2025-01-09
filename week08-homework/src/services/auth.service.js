@@ -1,22 +1,27 @@
+// 1. 컨트롤러
+// 2. 서비스
+// 3. 레퍼지토리
+// 서비스 단계에서 레퍼지토리를 가져온다.
+// AuthService클래스 생성하기
+// 회원가입 하는 함수 생성
+// 그 안에서 userRepositiory 인스턴스를 사용하면됨
+
 import userRepositiory from "../repositiories/user.repositiory.js";
 
-// 1계층. 컨트롤러(서비스를 사용한다.)
-// 2. 서비스 (레퍼지토리를 사용한다.)
-// 3. 레퍼지토리(orm을 사용한다.)
-
 class AuthService {
-    #repository
+    #repositiory
 
-    constructor(repository) {
-        this.#repository = repository; //auth서비스 안에있는 레퍼지토리를 가져온다.
+    constructor(userRepositiory) {
+        this.#repositiory = userRepositiory
     }
 
-    // signUp(여기 들어오는 데이터는 컨트롤러에서 들어온다)
-    // signUp(회원가입을 할 때 필요한 데이터)
-    signUp = async ({email, password, name}) => {
-        // 레포지토리를 호출해서 회원가입을 시킨다.
-        const user = await this.#repository.createUser({email, password, name});
-        return user;
-    }
+    signUp = async({email, password, name }) => {
+        const user = await this.#repositiory.signUp({
+            email,
+            password,
+            name,
+        });
+    return user;
+    };
 }
 export default new AuthService(userRepositiory);
