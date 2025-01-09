@@ -1,7 +1,5 @@
 import express from 'express';
-// Express 라이브러리를 가져온다. express 는 서버를 만들기 위해 도와주는 도구
 import { HTTP_STATUS } from '../constants/http-status.constant.js';
-
 import { MESSAGES } from '../constants/message.constant.js';
 import { createResumeValidator } from '../middlewares/validators/create-resume-validator.middleware.js';
 import { prisma } from '../utils/prisma.util.js';

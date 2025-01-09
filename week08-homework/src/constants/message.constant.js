@@ -1,7 +1,6 @@
 import { MIN_PASSWORD_LENGTH } from './auth.constant.js';
 import { MIN_RESUME_LENGTH } from './resume.constant.js';
 
-// 메세지를 맵핑하는(키, 밸류, AUTH COMMON EMAIL REQUIRED) 객체를 내보내주고 있다. 
 export const MESSAGES = {
   AUTH: {
     COMMON: {
